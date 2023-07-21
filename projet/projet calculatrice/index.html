@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="contenerCalculatrice">
+        <section class ="contenerEcran" id="contenerEcran">0</section>
+
+
+        <section class="boutonClavier" >
+            <div class="boutonLigne">
+                <button class="boutonClavier" id="C">C</button><button class="boutonClavier" id="suppression">←</button><button class="boutonClavier" id="division">÷</button>
+            </div>
+            <div class="boutonLigne">
+                <button class="boutonClavier" id="7">7</button><button class="boutonClavier" id="8">8</button><button class="boutonClavier" id="9">9</button><button class="boutonClavier" id="multiplication">x</button>
+            </div>
+            <div class="boutonLigne">
+                <button class="boutonClavier" id="4">4</button><button class="boutonClavier" id="5">5</button><button class="boutonClavier" id="6">6</button><button class="boutonClavier" id="soustraction">-</button>
+            </div>
+            <div class="boutonLigne">
+                <button class="boutonClavier" id="1">1</button><button class="boutonClavier" id="2">2</button><button class="boutonClavier" id="3">3</button><button class="boutonClavier" id="addition">+</button>
+            </div>
+            <div class="boutonLigne">
+                <button class="boutonClavier" onclick="toggleSideBar()" id="historique">l<i class="fa-solid fa-clock-rotate-left"></i></button><button class="boutonClavier" id="0">0</button><button class="boutonClavier" id="">,</button><button class="boutonClavier" id="egalite">=</button>
+            </div>
+        </section>
+        <div class="sideBarHistorique">
+            <button class="calculatrice" onclick="toggleSideBar()">
+                <i class="fa-solid fa-calculator"></i>
+            </button>
+            <div id="contenerHistorique"></div>
+            <button class="deleteHistorique" id="effacerHistorique">effacer l'historique</button>
+        </div>
+
+
+        
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="text/javascript">
+            const toggleSideBar = ()=> document.body.classList.toggle("open");
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Application météo</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="module" src="meteo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contener">
+        <div class="barRecherche">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <input type="text"  placeholder="entrez votre localisation" id ="choixLieux">
+            <button id="boutonRecherche"><i class="fa-solid fa-magnifying-glass"></i></button>
+            
+        </div>
+        <img id="imageMeteo" src="">
+        <div id="zoneTexteTemperature"></div>
+        <div id="descriptionDutemps"></div>
+        <p id="lieu"></p>
+
+
+        <div class="vitesseVentHumidite">
+            <span id="case">
+                <p>humidite :</p>
+                <img id="logoHumidite" src="">
+                <span id="humidite"></span>
+            </span>
+            
+            <span id="case1">
+                <p>vitesse du vent :</p>
+                <img id="logoVent" src="">
+                <span id="vitesseVent"></span>
+            </span>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

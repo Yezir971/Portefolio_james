@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: rgb(219,138,49);
+    background: radial-gradient(circle, rgba(219,138,49,1) 0%, rgba(137,228,218,1) 100%);
+}
+.contenerCalculatrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 650px;
+    margin: auto;
+    margin-top: 7%;
+    background: rgba(48, 97, 182, 0.3);
+    box-shadow: 0px 4px 30px rgba(35,35, 35, 0.1);
+    border-radius: 30px;
+    padding: 30px;
+}
+#contenerEcran{
+    text-align: right;
+    font-size: 35px;
+    padding: 20px;
+    color:black;
+    height: 200px ;
+    width:330px ;
+}
+.boutonClavier button, .calculatrice{
+    font-size: 20px;
+    width: 80px ;
+    height:80px;
+    border-radius: 30px;
+    background-color: rgba(233, 233, 242);
+}
+.boutonLigne{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    gap: 20px;
+}
+#historique {
+    color: aliceblue;
+}
+#historique i {
+    color: black;
+}
+#division,#egalite,#addition,#soustraction,#multiplication{
+    background-color: orange;
+}
+#C{
+    background-color: red;
+    width: 180px ;
+}
+#contenerHistorique{
+    overflow: auto; /* Activer le défilement automatique lorsque le contenu dépasse la hauteur */
+    width: 88%;
+}
+  
+.sideBarHistorique{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    flex-direction: column;
+    padding-top: 20px;
+    position: absolute;
+    overflow: hidden;
+    font-size: 40px;
+    top: 13.5%;
+    left: 37.7%;
+    width: 0px;
+    height: 70.5%;
+    border-radius: 30px;
+
+    transition: all 0.4s;
+    background: rgb(227,233,241);
+    background: radial-gradient(circle, rgba(227,233,241,1) 0%, rgba(65,86,145,1) 100%);
+}
+body.open .sideBarHistorique{
+    width: 17.5%;
+    border-radius: 30px;
+    background: rgb(227,233,241);
+    background: radial-gradient(circle, rgba(227,233,241,1) 0%, rgba(65,86,145,1) 100%);
+    border-right: solid black;
+}
+.deleteHistorique{
+    color:black;
+    border:none;
+    padding: 16px 32px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.deleteHistorique:hover{
+    color: white;
+    background-color: blue;
+    opacity: 1;
+}

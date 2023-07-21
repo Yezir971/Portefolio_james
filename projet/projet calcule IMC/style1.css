@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background: rgb(20,255,235);
+    background: linear-gradient(82deg, rgba(20,255,235,1) 0%, rgba(84,116,207,1) 100%);
+}
+
+.contener{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    margin-top: 30PX;
+    background-color: rgb(231, 255, 225);
+    border-radius: 5px;
+    border: solid rgb(231, 255, 255);
+    box-shadow:rgb(84, 106, 167) 1px 5px 5px;
+}
+.contener h1, button{
+    text-align: center;
+    font-weight: 100;
+}
+.valeur_saisie{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.zone_de_texte{
+    display:flex;
+    flex-direction: column;
+}
+button{
+    border: rgb(232, 163, 36);
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5px 10px ;
+    border-radius: 5px;
+    background-color: rgb(232, 163, 36);
+    box-shadow:5px 2px 2px rgb(173, 172, 172);
+    font-size: larger;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 350px;
+    height: 39px;
+    border-radius: 5px;
+    border: solid 1px whitesmoke;
+    box-shadow:5px 2px 2px rgb(173, 172, 172);
+    background-color: white;
+    font-size: larger;
+
+}

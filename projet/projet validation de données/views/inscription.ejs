@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background: rgb(89, 89, 203);
+        }
+        h1{
+            text-align: center;
+        }
+
+        .contener{
+            display: flex;
+            background: white;
+            justify-content: space-around;
+            width: 300px;
+            height: 400px;
+            flex-direction: column;
+            border:solid black;
+            border-radius: 5%;
+        }
+
+        .contener .entrer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contenerInscriptionConnexion{
+            display: flex ;
+            flex-direction: row;
+            justify-content: center;
+            gap:10px;
+            padding-top: 10px;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="contener">
+        <h1>inscription</h1>
+        <p id="message"></p>
+        <form method="post" action="/inscription" autocomplete="off">
+            <div class="entrer">
+
+                <div id="errorMessage"></div>
+
+                <label>mail</label>
+                <input id="mail" placeholder="mail" name = "mail" type="text">
+
+                <label>confirmer votre mail</label>
+                <input id="confirmationMail" name = "mailConfirmation" placeholder="confirmer votre mail" type="text">
+
+            
+                <label>nom</label>
+                <input id = "nom" placeholder="nom" name="nom" type = "text">
+
+
+                <label>mot de passe</label>
+                <input id="motDePasse" placeholder="mot de passe" name="password" type="password">
+
+                <label>confiremation du mot de passe</label>
+                <input id="confirmationMotDePasse" placeholder="confirmer votre mot de passe" name="passwordConfirmation" type="password">
+
+            </div>
+
+            <div class="contenerInscriptionConnexion">
+                <input type="submit" value="inscription">
+                <p>|</p>
+                <a href="connexion">déjà inscrit</a>
+
+            </div>
+        </form>
+
+    </div>
+
+    
+</body>
+
+
+</html>

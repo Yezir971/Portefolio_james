@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil - Robbie Lens Photographie</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rubik+Iso&display=swap" rel="stylesheet">
+		<!--style Montserrat-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+		<!--style Manrope-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+		<header>
+			<nav>
+				<div>
+					<a href="a-propos.html">À propos de moi</a>
+					<a href="portfolio.html">Portfolio</a> 
+				</div>
+				
+			</nav>
+		</header>
+
+
+		<main>
+			<section class="contener-texte">
+				<div><h1>Ahmedaly James</h1> 
+
+				<p><strong>Autodidacte de nature, je suis un apprenti développeur qui a appris la programmation sur internet, par passion.
+					C'est d'ailleurs en suivant la formation <a class="sitation" target ="_blank" href="//openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3">Openclasroom</a> que je recommande vivement, qui m'a premis de réaliser ce petit portfolio. 
+				</strong>
+				</p>
+				<a class="degrad" href="portfolio.html">Voir mon Portefolio</a></div>
+				<img width= "40%" src="photo/Screenshot 2023-04-10 08.40.17.png" alt="photo">
+
+			</section >
+				<section class="contener-portfolio">
+					<h2>Mon dernier projet</h2>
+					<div class="grid-dernier-projet">
+						<a href="projet/application_météo/indexe.html" class="lien-photo">
+							<img class="taille-paysage" src="photo/application_meteo.png" alt="projet front-end1">
+							<div class="photo-hover">Voir le projet</div>
+						</a>
+					</div>
+<!--
+				</section>
+				<section id="ancre-projet">
+					<h3 class="titre-user">Me contacter</h3>
+					<form method="get" action="">
+						<div class="alla">
+							<div class="a">
+								<label for="nom"><strong>Nom</strong></label><br>
+								<input type="text" id="nom" name="nom">
+							</div>
+						
+							<div class="a">
+								<label for="email"><strong>email</strong></label><br>
+								<input type="text" id="email" name="email">
+							</div>
+						</div>
+						<label for="message"><strong>Message</strong></label><br>
+						<textarea name="message" id="message" rows="10"></textarea><br>
+						<input id="btn" class ="degrad" type="submit" value="ENVOYER">
+					</form>
+				</section>
+			-->
+
+		</main>
+		
+		<footer>
+			<nav>
+				<div>
+					<a href="a-propos.html">À propos de moi</a>
+					<a href="portfolio.html">Portfolio</a> 
+				</div>
+				
+			</nav>
+		</footer>
+    </body>
+<!--
+	<script>
+		var btn = document.getElementById('btn');
+		btn.addEventListener('click', function(event){
+			event.preventDefault()
+			var name = document.getElementById('nom').value;
+			var email = document.getElementById('email').value;
+			var messsage = document.getElementById('message').value;
+			var body = `nom: ${name} <br/> email: ${email}<br/> messsage: ${message} <br/>` 
+			Email.send({
+    		Host : "smtp.elasticemail .com",
+    		Username : "portefoliojamesahmedaly@gmail.com",
+    		Password : "uwvdefiefiezdbcn",
+    		To : 'portefoliojamesahmedaly@gmail.com',
+    		From : email,
+    		Subject : "Portefolio retour",
+    		Body : body
+			}).then(
+  				message => alert(message)
+			);
+
+
+		});
+	</script>
+-->
+</html>
