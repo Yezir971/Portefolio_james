@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #460e4683;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+p , input, #timer{
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.4;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+label{
+    display: block;
+    margin:
+    margin-bottom: 10px;
+}
+
+.contenerTexteTimerCount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#texte{
+    width: 50vw;
+    height: 20vh;
+    overflow-y: scroll;
+}
+.partieColorier {
+    color: yellow;
+}
+
+.contenerTexteTimerCount , .contenerSaisie{
+    display: none;
+}
+.buttonChoix{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.buttonChoix button{
+    border-radius: 10px;
+}
