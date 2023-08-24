@@ -55,9 +55,7 @@ body{
     width: 37vw;
     margin: auto;
 }
-.motDePasseGenerer{
-    overflow: auto;
-}
+
 .listeComosition{
     gap: 30px;
 }
@@ -109,10 +107,12 @@ body{
     height: 180%;
 }
 .motDePasseGenerer{
+    overflow: auto;
+    margin: auto;
     width: 70%;
-    height: 30%;
+    height: 40%;
     border-bottom: solid 3px rgb(93, 89, 89);
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 @media screen and (max-width:1050px) {
@@ -135,9 +135,9 @@ body{
     }
     
 }
-@media screen and (max-height:886px) {
+@media screen and (max-height:696px) {
     .motDePasseGenerer{
-        font-size:medium;
+        font-size: 2vh;
     }
     
 }
