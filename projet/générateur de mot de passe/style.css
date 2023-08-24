@@ -107,7 +107,6 @@ body{
 }
 .motDePasseGenerer{
     overflow: auto;
-    margin: auto;
     width: 70%;
     height: 40%;
     border-bottom: solid 3px rgb(93, 89, 89);
