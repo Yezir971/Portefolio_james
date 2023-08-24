@@ -9,7 +9,7 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: url('/image_projet/imageForet1.jpg') no-repeat;
+    background: url('image_projet/imageForet1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
